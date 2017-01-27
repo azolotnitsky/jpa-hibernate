@@ -1,4 +1,4 @@
-package com.epam.javacc.microservices.jpa.controller;
+package com.epam.javacc.microservices.jpa.controllers;
 
 import com.epam.javacc.microservices.jpa.service.DriverService;
 import com.epam.javacc.microservices.jpa.domain.Driver;

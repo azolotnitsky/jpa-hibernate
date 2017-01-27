@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "DRIVER")
+@Table(name = "DRIVERS")
 public class Driver {
 
     @Id

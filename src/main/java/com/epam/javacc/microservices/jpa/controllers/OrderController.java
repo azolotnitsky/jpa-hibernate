@@ -1,4 +1,4 @@
-package com.epam.javacc.microservices.jpa.controller;
+package com.epam.javacc.microservices.jpa.controllers;
 
 import com.epam.javacc.microservices.jpa.service.OrderService;
 import com.epam.javacc.microservices.jpa.domain.Order;

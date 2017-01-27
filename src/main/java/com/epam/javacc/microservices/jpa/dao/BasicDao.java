@@ -12,6 +12,11 @@ import javax.persistence.PersistenceContext;
 @Transactional
 public class BasicDao<T> {
 
+  // An EntityManager will be automatically injected from entityManagerFactory
+  // setup on DatabaseConfig class.
+  @PersistenceContext
+  protected EntityManager entityManager;
+
     public void saveOrUpdate(T obj) {
         entityManager.persist(obj);
     }
@@ -22,10 +27,5 @@ public class BasicDao<T> {
         else
           entityManager.remove(entityManager.merge(obj));
     }
-
-  // An EntityManager will be automatically injected from entityManagerFactory
-  // setup on DatabaseConfig class.
-  @PersistenceContext
-  protected EntityManager entityManager;
 
 }
